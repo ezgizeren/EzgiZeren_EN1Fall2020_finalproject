@@ -95,7 +95,7 @@ function cloud_isActive() {
   // HACK: return the number of fields in the cloud service
   // - this is because isActive() doesn't seem to be set up right
   return (cloud_connection.getNames().length > 0);
-  return cloud_connection.isActive();
+  return 2;
 }
 
 // update cloud: key/value pair
