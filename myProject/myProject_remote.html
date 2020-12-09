@@ -5,6 +5,13 @@
 	  <script src="../src/secret.js" charset="utf-8"></script>
 	  <script src="../src/cloud.js" charset="utf-8"></script>
 	  <link rel="stylesheet" href="../src/style.css" />
+		<style>
+	.myDiv {
+	  border: 5px outset red;
+	  background-color: lightgreen;    
+	  text-align: center;
+	}
+	</style>
 	</head>
 <body>
 
@@ -16,6 +23,7 @@
   <h1>Save the Aliens!</h1>
 
 	<!-- table helps position elements in the page -->
+<div class="myDiv">
 	<table style="padding: 10px;">
 		<tr>
 			<td align="center"><button cloud_action='update' cloud_name='command'>Left</button></td>
@@ -23,7 +31,7 @@
 			<td align="center"><button cloud_action='update' cloud_name='command'>Right</button></td>
 		</tr>
 	</table>
-
+</div>
 	<hr>
 
 </body>
