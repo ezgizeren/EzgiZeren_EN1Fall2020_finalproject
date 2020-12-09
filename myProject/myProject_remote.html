@@ -6,14 +6,17 @@
 	  <script src="../src/cloud.js" charset="utf-8"></script>
 	  <link rel="stylesheet" href="../src/style.css" />
 		<style>
+		.myDiv1 { 
+		  text-align: center;
+			padding-top: 50px;
+		  padding-bottom: 50px;
+		}
 	.myDiv {
 	  border: 1px solid black;
 	  background-color: lightgreen;    
 	  text-align: center;
 		padding-top: 50px;
-	  padding-right: 30px;
 	  padding-bottom: 50px;
-	  padding-left: 80px;
 	}
 	</style>
 	</head>
@@ -23,9 +26,9 @@
 	<div id="servicedock">
 		<service-airtable id="service_airtable" tablename="FinalProject"></service-airtable>
 	</div>
-
-  <h1>Save the Aliens!</h1>
-
+<div class="myDiv1">
+  <h1> Save the Aliens!</h1>
+</div>
 	<!-- table helps position elements in the page -->
 <div class="myDiv">
 	<button cloud_action='update' cloud_name='command'>Left</button>
