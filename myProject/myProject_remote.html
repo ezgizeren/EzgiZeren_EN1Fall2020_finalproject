@@ -19,6 +19,21 @@
 		padding-left: 50px;
 		padding-right: 250px;
 	}
+	
+	#container {
+    position: relative;    
+}
+
+#example {
+   position: absolute;
+   top: 10px;
+   left: 10px; 
+    
+	 border: 1px solid black;
+	 padding-left: 50px;
+	 padding-right: 250px;
+}
+	
 	.button {
   display: inline-block;
   padding: 15px 25px;
@@ -54,13 +69,19 @@
 <div class="myDiv1">
   <h1> Save the Aliens!</h1>
 </div>
-<img src="./img/website_image.jpg" alt='Problem loading image.'>
+
+<div id="container">
+    <img src="./img/website_image.jpg" alt='Problem loading image.'>
+    <div id="example">
+			<button class="button" cloud_action='update' cloud_name='command'><</button>
+			<button class="button" cloud_action='update' cloud_name='command'>o</button>
+			<button class="button" cloud_action='update' cloud_name='command'>></button>
+		</div>
+</div>
+
+
 
 	<!-- table helps position elements in the page -->
-
-	<button class="button" cloud_action='update' cloud_name='command'><</button>
-	<button class="button" cloud_action='update' cloud_name='command'>o</button>
-	<button class="button" cloud_action='update' cloud_name='command'>></button>
 
 	<hr>
 
